@@ -16,7 +16,9 @@ Quick setup of Docker with Franken PHP and custom SSL domain name for local deve
 3. Rename `docker/.env.example` to `docker/.env`.
 4. Go to `/certs` directory and create a certificate for your local development domain:
 
-> `mkcert your.domain.name`
+```
+mkcert your.domain.name
+```
 
 5. Enter your domain name from step 4 inside `SERVER_NAME` field in `docker/.env`.
 
@@ -28,11 +30,15 @@ Quick setup of Docker with Franken PHP and custom SSL domain name for local deve
 
 7. Refresh DNS addresses (**sudo required**):
 
-> `sudo killall -HUP mDNSResponder`
+```
+sudo killall -HUP mDNSResponder
+```
 
 8. Compose your container
 
-> `cd docker && docker compose up -d`
+```
+cd docker && docker compose up -d
+```
 
 9. ✅ Done. Happy coding! 🥷
 
