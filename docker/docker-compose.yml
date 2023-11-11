@@ -1,0 +1,16 @@
+version: '3.9'
+name: ssl-docker-php
+
+services:
+  php:
+    image: dunglas/frankenphp
+    ports:
+      - 443:443
+    environment:
+      SERVER_NAME: ${SERVER_NAME}
+    volumes:
+      - ../app:/app/public
+      - ../certs/:/etc/app/certs
+      - ./Caddyfile:/etc/caddy/Caddyfile
+    tty: true
+
