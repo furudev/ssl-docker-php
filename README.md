@@ -8,39 +8,35 @@ Quick setup of Docker with Franken PHP and custom SSL domain name for local deve
 * [Docker](https://www.docker.com)
 * [Franken PHP](https://github.com/dunglas/frankenphp)
 * [mkcert](https://github.com/FiloSottile/mkcert)
+* 🚧 [BrowserSync](https://browsersync.io) _Work In Progress_ 🚧
 
 ## 🐾 Steps
 
 1. Clone this repository.
-2. Enter a proper name of your docker container in `docker/docker-compose.yml`.
-3. Rename `docker/.env.example` to `docker/.env`.
-4. Go to `/certs` directory and create a certificate for your local development domain:
+2. Setup file permissions to execute `setup.sh` script.
 
 ```
-mkcert your.domain.name
+chmod +x setup.sh
 ```
 
-5. Enter your domain name from step 4 inside `SERVER_NAME` field in `docker/.env`.
-
-6. Add your domain name at the end of your `/etc/hosts` file (**sudo required**)
+3. Run `setup.sh` with 2 arguments (this step will ask for sudo access to perform )
 
 ```
-127.0.0.1 your.domain.name
+./setup.sh $DOCKER_PROJECT_NAME $SERVER_NAME
 ```
 
-7. Refresh DNS addresses (**sudo required**):
+- `$DOCKER_PROJECT_NAME` is unique name of your docker compose project name.
+- `$SERVER_NAME` is your unique SSL domain name.
+
+Example
 
 ```
-sudo killall -HUP mDNSResponder
+./setup.sh php-setup dockerphpsetup.ninja
 ```
 
-8. Compose your container
-
-```
-cd docker && docker compose up -d
-```
-
-9. ✅ Done. Happy coding! 🥷
+4. ✅ Done. Happy coding! 🥷
 
 ## 💡 Feature ideas
-- [ ] simplify steps with bash script
+
+- [x] simplify steps with bash script
+- [ ] add browser-sync to add live reloading of files

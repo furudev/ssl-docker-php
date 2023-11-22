@@ -1,0 +1,14 @@
+{
+  "name": "ssl-docker-php",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "browser-sync"
+  },
+  "author": "furu.dev",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "2.29.3"
+  }
+}

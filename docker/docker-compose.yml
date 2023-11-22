@@ -10,7 +10,7 @@ services:
       SERVER_NAME: ${SERVER_NAME}
     volumes:
       - ../app:/app/public
-      - ../certs/:/etc/app/certs
+      - ../certs:/etc/app/certs
       - ./Caddyfile:/etc/caddy/Caddyfile
     tty: true
 
