@@ -4,7 +4,10 @@ LOCALHOST="127.0.0.1"
 HOSTS="/etc/hosts"
 ENV="docker/.env"
 DOCKER_COMPOSE="docker/docker-compose.yml"
+WATCHER_SERVER="lib/watcher/server.js"
+WATCHER_CLIENT="lib/watcher/client.js"
 DEFAULT_DOCKER_PROJECT_NAME="ssl-docker-php"
+DEFAULT_SERVER_NAME="DOMAIN"
 GREEN="\e[32m"
 EC="\e[0m"
 
@@ -43,6 +46,12 @@ function replaceDockerName {
   printf "✅ Docker container named.\n"
 }
 
+function replaceWatcherServerName {
+  sed -i '' "s/$DEFAULT_SERVER_NAME/$SERVER_NAME" $WATCHER_SERVER
+  sed -i '' "s/$DEFAULT_SERVER_NAME/$SERVER_NAME" $WATCHER_CLIENT
+  printf "✅ Watcher script server name updated.\n"
+}
+
 function generateSSLCert {
   cd certs/
   mkcert $SERVER_NAME
@@ -62,5 +71,6 @@ appendVHost
 generateEnvFile
 generateSSLCert
 replaceDockerName
+replaceWatcherServerName
 setupDocker
 printf "\n${GREEN}✅ Done. ${EC}Happy coding, Ninja! 👋\n"

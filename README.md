@@ -8,6 +8,11 @@ Quick setup of Docker with Franken PHP and custom SSL domain name for local deve
 * [Docker](https://www.docker.com)
 * [Franken PHP](https://github.com/dunglas/frankenphp)
 * [mkcert](https://github.com/FiloSottile/mkcert)
+* [ws](https://www.npmjs.com/package/ws)
+* [Chokidar](https://www.npmjs.com/package/chokidar)
+* [PostCSS](https://postcss.org/)
+* [CSSNano](https://cssnano.co/)
+
 
 ## 🐾 Steps
 
@@ -40,4 +45,5 @@ Example
 - [x] simplify steps with bash script
 - [x] watch for changes in `*.php` files
 - [x] watch for changes in `*.css` files and output minified css code with PostCSS
-- [ ] add error handling to the `setup.sh` script
+- [ ] add a script to automatically load `client.js` watcher script
+- [ ] add an error handling to the `setup.sh` script
