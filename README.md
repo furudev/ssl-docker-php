@@ -8,7 +8,6 @@ Quick setup of Docker with Franken PHP and custom SSL domain name for local deve
 * [Docker](https://www.docker.com)
 * [Franken PHP](https://github.com/dunglas/frankenphp)
 * [mkcert](https://github.com/FiloSottile/mkcert)
-* 🚧 [BrowserSync](https://browsersync.io) _Work In Progress_ 🚧
 
 ## 🐾 Steps
 
@@ -39,4 +38,6 @@ Example
 ## 💡 Feature ideas
 
 - [x] simplify steps with bash script
-- [ ] add browser-sync to add live reloading of files
+- [x] watch for changes in `*.php` files
+- [x] watch for changes in `*.css` files and output minified css code with PostCSS
+- [ ] add error handling to the `setup.sh` script

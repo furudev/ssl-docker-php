@@ -1,0 +1,10 @@
+:root {
+  --color-scheme: dark;
+
+  color-scheme: var(--color-scheme);
+  background-color: #000;
+}
+
+h1 {
+  color: red;
+}

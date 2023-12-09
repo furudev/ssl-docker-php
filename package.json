@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "watch": "browser-sync"
+    "watch": "node ./lib/watcher/server.js"
   },
   "author": "furu.dev",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "2.29.3"
+    "autoprefixer": "10.4.16",
+    "chokidar": "3.5.3",
+    "cssnano": "6.0.1",
+    "postcss": "8.4.31",
+    "ws": "8.14.2"
   }
 }
