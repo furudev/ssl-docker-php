@@ -47,8 +47,8 @@ function replaceDockerName {
 }
 
 function replaceWatcherServerName {
-  sed -i '' "s/$DEFAULT_SERVER_NAME/$SERVER_NAME" $WATCHER_SERVER
-  sed -i '' "s/$DEFAULT_SERVER_NAME/$SERVER_NAME" $WATCHER_CLIENT
+  sed -i '' "s/$DEFAULT_SERVER_NAME/$SERVER_NAME/" $WATCHER_SERVER
+  sed -i '' "s/$DEFAULT_SERVER_NAME/$SERVER_NAME/" $WATCHER_CLIENT
   printf "✅ Watcher script server name updated.\n"
 }
 
