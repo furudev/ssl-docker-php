@@ -42,7 +42,15 @@ Example
 ./setup.sh php-setup dockerphpsetup.ninja
 ```
 
-6. ✅ Done. Happy coding! 🥷
+6. ✅ Done. Open your favourite browser and type domain name that you passed to the `setup.sh` script. Happy coding! 🥷
+
+7. If you want to enable a file watcher run watcher script
+
+```
+npm run watch
+```
+
+and include a script tag with `client.js` file to your main `.php` file (_this step will be removed in next update in favour of autoloader script._). Refresh current browser window and edit your `stylesheet.css` file and see changes live like a true ninja! 🥷
 
 ## 💡 Feature ideas
 
@@ -50,4 +58,5 @@ Example
 - [x] watch for changes in `*.php` files
 - [x] watch for changes in `*.css` files and output minified css code with PostCSS
 - [ ] add a script to automatically load `client.js` watcher script
+- [ ] watch for changes in `*.js` files
 - [ ] add an error handling to the `setup.sh` script
