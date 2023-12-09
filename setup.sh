@@ -7,7 +7,7 @@ DOCKER_COMPOSE="docker/docker-compose.yml"
 WATCHER_SERVER="lib/watcher/server.js"
 WATCHER_CLIENT="lib/watcher/client.js"
 DEFAULT_DOCKER_PROJECT_NAME="ssl-docker-php"
-DEFAULT_SERVER_NAME="DOMAIN"
+DEFAULT_SERVER_NAME="DOMAIN_NAME"
 GREEN="\e[32m"
 EC="\e[0m"
 
