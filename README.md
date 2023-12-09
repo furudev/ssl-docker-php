@@ -50,7 +50,7 @@ Example
 npm run watch
 ```
 
-and include a script tag with `client.js` file to your main `.php` file (_this step will be removed in next update in favour of autoloader script._). Refresh current browser window and edit your `stylesheet.css` file and see changes live like a true ninja! 🥷
+and include a script tag with `client.js` file to your main `.php` file (_this step will be removed in the next update in favour of autoloader script._). Refresh current browser window and edit your `stylesheet.css` file and see changes live like a true ninja! 🥷
 
 ## 💡 Feature ideas
 
