@@ -23,7 +23,11 @@ Quick setup of Docker with Franken PHP and custom SSL domain name for local deve
 chmod +x setup.sh
 ```
 
-3. Run `setup.sh` with 2 arguments (this step will ask for sudo access to perform )
+3. Make sure you have `node.js` installed if you want to use file watcher to have auto refreshing functionality in the browser.
+
+4. Install node packages `npm i` or `yarn i` or `pnpm i`.
+
+5. Run `setup.sh` with 2 arguments (ℹ️ _this step will ask you for a sudo access to modify `/etc/hosts` file and refresh DNS_)
 
 ```
 ./setup.sh $DOCKER_PROJECT_NAME $SERVER_NAME
@@ -38,7 +42,7 @@ Example
 ./setup.sh php-setup dockerphpsetup.ninja
 ```
 
-4. ✅ Done. Happy coding! 🥷
+6. ✅ Done. Happy coding! 🥷
 
 ## 💡 Feature ideas
 
