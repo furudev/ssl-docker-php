@@ -57,6 +57,7 @@ and include a script tag with `client.js` file to your main `.php` file (_this s
 - [x] simplify steps with bash script
 - [x] watch for changes in `*.php` files
 - [x] watch for changes in `*.css` files and output minified css code with PostCSS
+- [ ] replace PostCSS and CSSNano with Lightning CSS
 - [ ] add a script to automatically load `client.js` watcher script
 - [ ] watch for changes in `*.js` files
 - [ ] add an error handling to the `setup.sh` script
