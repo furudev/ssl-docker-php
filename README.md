@@ -1,3 +1,7 @@
+# UPDATE
+
+`ssl-docker-php` transformed into [Ashiba.ninja](https://github.com/furudev/ashiba.ninja).
+
 # 🐳 SSL Docker PHP
 
 Quick setup of Docker with Franken PHP and custom SSL domain name for local development.
